@@ -2,7 +2,7 @@
 
 This gem adds hot reloading feature to Rails applications that contains hotwire. The application is automatically reloaded when:
 - Any file has changed (added, updated or deleted) in `app/assets/builds`
-- Any app view was changed (added, updated or deleted) in `app/views`
+- Any app view has changed (added, updated or deleted) in `app/views`
 
 ## Dependencies
 - This Gem depends on (turbo-rails)[https://github.com/hotwired/turbo-rails] to automatically stream reload message when file changes were detected
@@ -17,14 +17,14 @@ end
 ```
 - And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 - Include this template in your layout
 ```ruby
 = render '/rails_hotreload/stream'
 ```
 
-- Start the file watcher
+- Start the file watcher (Rake task)
 ```
 bin/rails rails_hotreload:start
 ```
@@ -32,7 +32,7 @@ Note: If your project is using Procfile.dev (Foreman), then you can add:
 ```
 rails_hotreload: bin/rails rails_hotreload:start
 ```
-- Start your rails application and 
+- Start your rails application and try editing your views or stylesheets or js files to see immediate changes in your browser
 
 ## Configuration
 - This gem by default is watching changes in: `app/assets/builds,app/views/`. This can be customized as the following: 
