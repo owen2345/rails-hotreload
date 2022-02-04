@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
 
-  spec.add_dependency 'listen' # TODO: require false
+  spec.add_dependency 'listen'
   spec.add_dependency 'rails'
   spec.add_dependency 'turbo-rails'
 end
