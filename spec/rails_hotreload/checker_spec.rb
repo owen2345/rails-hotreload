@@ -8,7 +8,7 @@ module Turbo
   end
 end
 
-describe Hotreload::Checker do
+describe RailsHotreload::Checker do
   let(:paths) { %w[path1/path path2/somewhere] }
   let(:inst) { described_class.new(paths) }
   let(:listen_mock) { double(start: true) }
@@ -29,7 +29,7 @@ describe Hotreload::Checker do
   end
 
   it 'streams via turbo to reload browser' do
-    key = 'hotreload'
+    key = 'rails_hotreload'
     klass = Turbo::StreamsChannel
     expect(klass).to receive(:broadcast_append_to).with(key, target: key, content: anything)
     inst.send(:stream_reload)

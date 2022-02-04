@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/hotreload/version'
+require_relative 'lib/rails_hotreload/version'
 
 Gem::Specification.new do |spec|
-  spec.name        = 'hotreload'
-  spec.version     = Hotreload::VERSION
+  spec.name        = 'rails_hotreload'
+  spec.version     = RailsHotreload::VERSION
   spec.authors     = ['Owen Peredo Diaz']
   spec.email       = ['owenperedo@gmail.com']
   spec.homepage    = 'https://github.com/owen2345/rails-hotreload'

@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require 'rails'
-module Hotreload
+module RailsHotreload
   class Railtie < ::Rails::Railtie
-    railtie_name :hotreload
+    railtie_name :rails_hotreload
 
     rake_tasks do
-      load 'hotreload/lib/tasks/hotreload_tasks.rake'
+      load 'rails_hotreload/lib/tasks/rails_hotreload_tasks.rake'
     end
 
     config.before_initialize do |app|

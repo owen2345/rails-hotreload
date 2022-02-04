@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require 'hotreload/version'
-require 'hotreload/railtie'
+require 'rails_hotreload/version'
+require 'rails_hotreload/railtie'
 
 require 'listen'
 require 'turbo-rails'
 
-module Hotreload
+module RailsHotreload
   class Checker
     attr_reader :paths
 
@@ -26,7 +26,7 @@ module Hotreload
     def stream_reload
       puts 'Changes detected, reloading...'
       klass = Turbo::StreamsChannel
-      klass.broadcast_append_to('hotreload', target: 'hotreload', content: '<span />')
+      klass.broadcast_append_to('rails_hotreload', target: 'rails_hotreload', content: '<span />')
     end
   end
 end

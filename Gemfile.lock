@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hotreload (0.1.0)
+    rails_hotreload (0.1.0)
       listen
       rails
       turbo-rails
@@ -181,7 +181,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  hotreload!
+  rails_hotreload!
   rspec
   rubocop
 

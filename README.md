@@ -1,4 +1,4 @@
-# Hotreload
+# RailsHotreload
 
 This gem adds hot reloading feature to Rails applications that contains hotwire. The application is automatically reloaded when:
 - Any file has changed (added, updated or deleted) in `app/assets/builds`
@@ -12,7 +12,7 @@ This gem adds hot reloading feature to Rails applications that contains hotwire.
 - Add this line to your application's Gemfile:
 ```ruby
 group :development, :test do
-  gem "hotreload"
+  gem "rails_hotreload"
 end
 ```
 - And then execute:
@@ -21,27 +21,27 @@ $ bundle
 ```
 - Include this template in your layout
 ```ruby
-= render '/hotreload/stream'
+= render '/rails_hotreload/stream'
 ```
 
 - Start the file watcher
 ```
-bin/rails hotreload:start
+bin/rails rails_hotreload:start
 ```
 Note: If your project is using Procfile.dev (Foreman), then you can add:
 ```
-hotreload: bin/rails hotreload:start
+rails_hotreload: bin/rails rails_hotreload:start
 ```
 - Start your rails application and 
 
 ## Configuration
 - This gem by default is watching changes in: `app/assets/builds,app/views/`. This can be customized as the following: 
 ```
-bin/rails hotreload:start app/javascripts,app/stylesheets,app/views/
+bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
 ```
 - The hot reloader UI can be customized as the following:
 ```
-= render '/hotreload/stream', custom_style: 'right: 20px; top: 20px;'
+= render '/rails_hotreload/stream', custom_style: 'right: 20px; top: 20px;'
 ```
 
 ## Contributing

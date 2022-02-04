@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# Specify your gem's dependencies in hotreload.gemspec.
+# Specify your gem's dependencies in rails_hotreload.gemspec.
 gemspec
 
 gem 'rspec'
