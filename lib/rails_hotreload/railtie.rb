@@ -6,7 +6,7 @@ module RailsHotreload
     railtie_name :rails_hotreload
 
     rake_tasks do
-      load 'rails_hotreload/lib/tasks/rails_hotreload_tasks.rake'
+      load 'tasks/rails_hotreload_tasks.rake'
     end
 
     config.before_initialize do |app|
