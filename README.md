@@ -11,7 +11,7 @@ This gem adds hot reloading feature to Rails applications that contains hotwire.
 ## Installation
 - Add this line to your application's Gemfile:
 ```ruby
-group :development, :test do
+group :development do
   gem "rails_hotreload"
 end
 ```
