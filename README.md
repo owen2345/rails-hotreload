@@ -41,7 +41,7 @@ bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
 ```
 - The hot reloader UI can be customized as the following:
 ```
-= render '/rails_hotreload/stream', custom_style: 'right: 20px; top: 20px;'
+= render '/rails_hotreload/stream', custom_style: 'left: 20px; bottom: 20px;'
 ```
 
 ## Contributing
