@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ['Owen Peredo Diaz']
   spec.email       = ['owenperedo@gmail.com']
   spec.homepage    = 'https://github.com/owen2345/rails-hotreload'
-  spec.summary     = 'Auto reloads Rails 7+ applications when assets or views have changed'
-  spec.description = 'Auto reloads Rails 7+ applications when assets or views have changed'
+  spec.summary     = 'Auto reloads Rails applications when assets or views have changed'
+  spec.description = 'Auto reloads Rails applications when assets or views have changed'
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
