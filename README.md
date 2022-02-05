@@ -11,7 +11,7 @@ This gem adds hot reloading feature to Rails applications that contains hotwire.
 ## Installation
 - Add this line to your application's Gemfile:
 ```ruby
-group :development, :test do
+group :development do
   gem "rails_hotreload"
 end
 ```
@@ -21,7 +21,7 @@ $ bundle install
 ```
 - Include this template in your layout
 ```ruby
-= render '/rails_hotreload/stream'
+= render '/rails_hotreload/stream' if Rails.env.development?
 ```
 
 - Start the file watcher (Rake task)
@@ -41,12 +41,13 @@ bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
 ```
 - The hot reloader UI can be customized as the following:
 ```
-= render '/rails_hotreload/stream', custom_style: 'right: 20px; top: 20px;'
+= render '/rails_hotreload/stream', custom_style: 'left: 20px; bottom: 20px;'
 ```
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/owen2345/pub_sub_model_sync. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.    
-You can run the tests with: `docker-compose run test bash`
+
+You can run the tests with: `docker-compose run test`
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
