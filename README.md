@@ -21,7 +21,7 @@ $ bundle install
 ```
 - Include this template in your layout
 ```ruby
-= render '/rails_hotreload/stream'
+= render '/rails_hotreload/stream' if Rails.env.development?
 ```
 
 - Start the file watcher (Rake task)
