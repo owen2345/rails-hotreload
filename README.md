@@ -46,7 +46,8 @@ bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/owen2345/pub_sub_model_sync. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.    
-You can run the tests with: `docker-compose run test bash`
+
+You can run the tests with: `docker-compose run test`
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
