@@ -45,13 +45,9 @@ bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
 ```
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/owen2345/pub_sub_model_sync. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.    
+Bug reports and pull requests are welcome on https://github.com/owen2345/rails-hotreload. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.    
 
-You can run the tests with: `docker-compose run test`
+To ensure your contribution changes, run the tests with: `docker-compose run test`
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## **Code of Conduct**
-
-Everyone interacting in the PubSubModelSync project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/pub_sub_model_sync/blob/master/CODE_OF_CONDUCT.md).
