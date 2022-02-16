@@ -35,6 +35,7 @@ rails_hotreload: bin/rails rails_hotreload:start
 - Start your rails application and try editing your views or stylesheets or js files to see immediate changes in your browser
 
 ## Configuration
+- Make sure your Turbo settings are well configured. See https://github.com/hotwired/turbo-rails#installation (Specially #4)
 - This gem by default is watching changes in: `app/assets/builds,app/views/`. This can be customized as the following: 
 ```
 bin/rails rails_hotreload:start app/javascripts,app/stylesheets,app/views/
