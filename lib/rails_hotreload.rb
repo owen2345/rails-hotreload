@@ -23,6 +23,7 @@ module RailsHotreload
 
     private
 
+    # TODO: detach delays when consecutive changes
     def stream_reload
       puts 'Changes detected, reloading...'
       klass = Turbo::StreamsChannel
