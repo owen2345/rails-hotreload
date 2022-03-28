@@ -2,11 +2,9 @@
   <%= turbo_stream_from 'rails_hotreload' %>
   <span>Hot-reloading: <input type="checkbox" style="vertical-align: middle;" checked></span>
   <script type="text/javascript">
-    window.onload = () => {
-      document.getElementById('rails_hotreload').addEventListener('DOMNodeInserted', function() {
-        const enabled = document.body.querySelector('#rails_hotreload input').checked;
-        if (enabled) window.location.reload();
-      }, false);
-    };
+    document.getElementById('rails_hotreload').addEventListener('DOMNodeInserted', function(){
+      const enabled = document.body.querySelector('#rails_hotreload input').checked;
+      if (enabled) window.location.reload();
+    });
   </script>
 </div>
